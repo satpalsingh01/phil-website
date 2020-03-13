@@ -37,9 +37,9 @@ app.post('/send-contact-us-mail', function(req, res){
 
   var mailOptions = {
     from: req.body.email,
-    to: 'satpals.bavnsofts@gmail.com',
+    to: 'info@puracorp.ca',
     subject: req.body.subject,
-    html: '<p>User Name: '+req.body.user_name+'</p><p>User Email: '+req.body.email+'</p><p>Subject: '+req.body.subject+'</p><p>Message: '+req.body.message+'</p>'
+    html: '<p>User Name: '+req.body.user_name+'</p><p>User Email: '+req.body.email+'</p><p>Message: '+req.body.message+'</p>'
   };
 
   transporter.sendMail(mailOptions, function(error, info){
